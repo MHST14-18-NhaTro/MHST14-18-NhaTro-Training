@@ -51,7 +51,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, com.google.android.gms.loca
 
 	@Override
 	public void onConnectionFailed(ConnectionResult arg0) {
-		Log.d("fucking bug", "onConnectionFailed");
+		Log.d("bug", "onConnectionFailed");
 	}
 
 	@Override
@@ -61,7 +61,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, com.google.android.gms.loca
 
 	@Override
 	public void onDisconnected() {
-		Log.d("fucking bug", "onDisconnected");
+		Log.d("bug", "onDisconnected");
 	}
 
 }
