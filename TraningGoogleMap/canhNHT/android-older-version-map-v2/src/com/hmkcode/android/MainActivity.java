@@ -12,6 +12,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
  
@@ -29,7 +30,7 @@ GooglePlayServicesClient.OnConnectionFailedListener, com.google.android.gms.loca
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		myMap = ((MapFragment)getFragmentManager().findFragmentById(R.id.map)).getMap();
+myMap = ((SupportMapFragment)getSupportFragmentManager().findFragmentById(R.id.map)).getMap();
 		if (myMap != null) {
 			myMap.setMyLocationEnabled(true);
 		}
