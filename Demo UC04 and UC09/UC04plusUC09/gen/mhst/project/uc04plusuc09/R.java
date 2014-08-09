@@ -858,10 +858,11 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f060002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f070003;
+        public static final int abc_search_url_text_holo=0x7f070004;
         public static final int abc_search_url_text_normal=0x7f070000;
         public static final int abc_search_url_text_pressed=0x7f070002;
         public static final int abc_search_url_text_selected=0x7f070001;
+        public static final int green=0x7f070003;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1085,12 +1086,16 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
+        public static final int btn_next=0x7f050041;
+        public static final int btn_next2=0x7f050043;
+        public static final int btn_star=0x7f050040;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
+        public static final int editText1=0x7f05003f;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
@@ -1102,6 +1107,7 @@ containing a value of this type.
         public static final int image=0x7f050027;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
+        public static final int map=0x7f050045;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1128,6 +1134,11 @@ containing a value of this type.
         public static final int tabMode=0x7f050002;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
+        public static final int txt=0x7f05003c;
+        public static final int txt_b2=0x7f050042;
+        public static final int txt_nhaptt=0x7f05003e;
+        public static final int txt_showmap=0x7f050044;
+        public static final int txt_thongtin=0x7f05003d;
         public static final int up=0x7f050021;
         public static final int useLogo=0x7f050003;
         public static final int withText=0x7f05000c;
@@ -1182,8 +1193,11 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030015;
         public static final int abc_search_view=0x7f030016;
         public static final int abc_simple_decor=0x7f030017;
-        public static final int main=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
+        public static final int b1_nhap=0x7f030018;
+        public static final int b2_nhap=0x7f030019;
+        public static final int b3_nhap=0x7f03001a;
+        public static final int main=0x7f03001b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1227,6 +1241,18 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int app_name=0x7f0a000d;
+        public static final int b1=0x7f0a0014;
+        public static final int b2=0x7f0a0018;
+        public static final int dangtt=0x7f0a000e;
+        public static final int eTenKH=0x7f0a0011;
+        public static final int gia_phong=0x7f0a0017;
+        public static final int next=0x7f0a0015;
+        public static final int nhapdc=0x7f0a0016;
+        public static final int nhaptt=0x7f0a000f;
+        public static final int show_map=0x7f0a0019;
+        public static final int star=0x7f0a0013;
+        public static final int tenKH=0x7f0a0010;
+        public static final int tinh=0x7f0a0012;
     }
     public static final class style {
         /** 

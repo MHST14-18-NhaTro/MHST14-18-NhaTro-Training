@@ -1,5 +1,17 @@
 <resources>
 
     <string name="app_name">UC04plusUC09</string>
+    <string name="dangtt">ĐĂNG ĐỊA CHỈ NHÀ TRỌ</string>
+    <string name ="nhaptt">Nhập địa chỉ hoặc ấn * để xác định vị trí</string>
+    <string name="tenKH">Tên người đăng: </string>
+    <string name="eTenKH">Nhập tên người đăng</string>
+    <string name="tinh">Tỉnh/thành</string>
+    <string name = "star">*</string>
+    <string name="b1">BƯỚC 1</string>
+    <string name="next">NEXT</string>
+    <string name ="nhapdc">Nhập địa chỉ nhà trọ</string>
+    <string name="gia_phong">Giá phòng</string>
+    <string name="b2">BƯỚC 2</string>
+    <string name="show_map">Vị trí của bạn được hiện thị trên bản đồ</string>
 
 </resources>

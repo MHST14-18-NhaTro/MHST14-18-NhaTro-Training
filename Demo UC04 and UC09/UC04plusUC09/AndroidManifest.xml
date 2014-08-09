@@ -20,6 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="mhst.project.uc04plusuc09.b2"
+            android:label="@string/b1" 
+            ></activity>
+        <activity
+            android:name="mhst.project.uc04plusuc09.b3"
+            android:label="@string/b2" 
+            ></activity>
     </application>
 
 </manifest>
