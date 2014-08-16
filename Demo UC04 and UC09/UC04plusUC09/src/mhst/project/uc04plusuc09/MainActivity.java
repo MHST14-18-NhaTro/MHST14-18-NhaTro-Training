@@ -17,8 +17,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.b1_nhap);
 		final Button next1Button = (Button) findViewById(R.id.btn_next);
-		next1Button.setOnClickListener(new OnClickListener() {
-			
+		next1Button.setOnClickListener(new OnClickListener() {			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub

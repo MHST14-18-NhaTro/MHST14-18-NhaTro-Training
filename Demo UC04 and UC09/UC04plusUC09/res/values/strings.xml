@@ -13,5 +13,17 @@
     <string name="gia_phong">Giá phòng</string>
     <string name="b2">BƯỚC 2</string>
     <string name="show_map">Vị trí của bạn được hiện thị trên bản đồ</string>
+    <string name="back">BACK</string>
+    <string name="b3">BƯỚC 3</string>
+    <string name="chitiet">Thông tin chi tiết về nhà trọ: </string>
+    <string name="dk1">TODO</string>
+    <string name="dk2">TODO</string>
+    <string name="dk3">TODO</string>
+    <string name="sophong">Số phòng còn trống: </string>
+    <string name="dientich">Diện tích: </string>
+    <string name="phong"> phòng</string>
+    <string name="m2">m2</string>
+    <string name="cb1">TODO</string>
+    <string name="cb2">TODO</string>
 
 </resources>
