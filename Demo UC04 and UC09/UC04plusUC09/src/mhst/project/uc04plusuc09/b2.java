@@ -25,7 +25,7 @@ public class b2 extends Activity {
 			}
 		});
 		final Button back2Button = (Button) findViewById(R.id.btn_back2);
-		next2Button.setOnClickListener(new OnClickListener() {
+		back2Button.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {

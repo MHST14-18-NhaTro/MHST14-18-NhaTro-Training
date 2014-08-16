@@ -14,8 +14,8 @@ public class b3 extends Activity{
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.b3_nhap);
-		final Button next1Button = (Button) findViewById(R.id.btn_next2);
-		next1Button.setOnClickListener(new OnClickListener() {
+		final Button next3Button = (Button) findViewById(R.id.btn_next3);
+		next3Button.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -27,7 +27,7 @@ public class b3 extends Activity{
 			}
 		});
 		final Button back3Button = (Button) findViewById(R.id.btn_back3);
-		next1Button.setOnClickListener(new OnClickListener() {
+		back3Button.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
