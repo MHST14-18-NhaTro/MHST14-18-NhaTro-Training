@@ -250,13 +250,13 @@ int id always 0x7f05000b
 int id beginning 0x7f050011
 int id btn_back2 0x7f050045
 int id btn_back3 0x7f050048
-int id btn_back4 0x7f050054
-int id btn_chon 0x7f050051
+int id btn_back4 0x7f050053
 int id btn_next 0x7f05003d
 int id btn_next2 0x7f050044
 int id btn_next3 0x7f050047
-int id btn_next4 0x7f050053
+int id btn_next4 0x7f050052
 int id btn_star 0x7f050041
+int id cb1 0x7f050050
 int id checkbox 0x7f05002d
 int id collapseActionView 0x7f05000d
 int id default_activity_button 0x7f050028
@@ -270,7 +270,6 @@ int id edit_sophong 0x7f05004b
 int id end 0x7f050013
 int id expand_activities_button 0x7f050026
 int id expanded_menu 0x7f05002c
-int id grid_list 0x7f050050
 int id home 0x7f050014
 int id homeAsUp 0x7f050005
 int id icon 0x7f05002a
@@ -309,12 +308,13 @@ int id top_action_bar 0x7f050020
 int id txt 0x7f05003c
 int id txt_b2 0x7f050042
 int id txt_b3 0x7f050046
-int id txt_b4 0x7f050052
+int id txt_b4 0x7f050051
 int id txt_chitiet 0x7f050049
 int id txt_dientich 0x7f05004d
 int id txt_m2 0x7f05004f
 int id txt_nhaptt 0x7f05003f
 int id txt_phong 0x7f05004c
+int id txt_show 0x7f050054
 int id txt_showmap 0x7f050043
 int id txt_sophong 0x7f05004a
 int id txt_thongtin 0x7f05003e
@@ -392,6 +392,7 @@ int string sophong 0x7f0a0020
 int string star 0x7f0a0013
 int string tenKH 0x7f0a0010
 int string tinh 0x7f0a0012
+int string yc1 0x7f0a0027
 int style AppBaseTheme 0x7f0b008b
 int style AppTheme 0x7f0b008c
 int style TextAppearance_AppCompat_Base_CompactMenu_Dialog 0x7f0b0063

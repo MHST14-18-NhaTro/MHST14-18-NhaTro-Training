@@ -1088,13 +1088,13 @@ containing a value of this type.
         public static final int beginning=0x7f050011;
         public static final int btn_back2=0x7f050045;
         public static final int btn_back3=0x7f050048;
-        public static final int btn_back4=0x7f050054;
-        public static final int btn_chon=0x7f050051;
+        public static final int btn_back4=0x7f050053;
         public static final int btn_next=0x7f05003d;
         public static final int btn_next2=0x7f050044;
         public static final int btn_next3=0x7f050047;
-        public static final int btn_next4=0x7f050053;
+        public static final int btn_next4=0x7f050052;
         public static final int btn_star=0x7f050041;
+        public static final int cb1=0x7f050050;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int default_activity_button=0x7f050028;
@@ -1108,7 +1108,6 @@ containing a value of this type.
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
-        public static final int grid_list=0x7f050050;
         public static final int home=0x7f050014;
         public static final int homeAsUp=0x7f050005;
         public static final int icon=0x7f05002a;
@@ -1147,12 +1146,13 @@ containing a value of this type.
         public static final int txt=0x7f05003c;
         public static final int txt_b2=0x7f050042;
         public static final int txt_b3=0x7f050046;
-        public static final int txt_b4=0x7f050052;
+        public static final int txt_b4=0x7f050051;
         public static final int txt_chitiet=0x7f050049;
         public static final int txt_dientich=0x7f05004d;
         public static final int txt_m2=0x7f05004f;
         public static final int txt_nhaptt=0x7f05003f;
         public static final int txt_phong=0x7f05004c;
+        public static final int txt_show=0x7f050054;
         public static final int txt_showmap=0x7f050043;
         public static final int txt_sophong=0x7f05004a;
         public static final int txt_thongtin=0x7f05003e;
@@ -1285,6 +1285,7 @@ containing a value of this type.
         public static final int star=0x7f0a0013;
         public static final int tenKH=0x7f0a0010;
         public static final int tinh=0x7f0a0012;
+        public static final int yc1=0x7f0a0027;
     }
     public static final class style {
         /** 

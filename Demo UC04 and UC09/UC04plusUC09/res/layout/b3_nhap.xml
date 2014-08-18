@@ -95,23 +95,38 @@
         android:layout_toEndOf="@+id/edit_dientich"
         android:text="@string/m2" />
 
-    <GridView
-        android:id="@+id/grid_list"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_dientich"
-        android:choiceMode="multipleChoice"
-        android:numColumns="1" >
-    </GridView>
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="4dp" >
 
-    <Button
-        android:id="@+id/btn_chon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/grid_list"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:minWidth="200px"
-        android:text="Select" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yc1"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="2dp" >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cb1" 
+                />
+        </LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
