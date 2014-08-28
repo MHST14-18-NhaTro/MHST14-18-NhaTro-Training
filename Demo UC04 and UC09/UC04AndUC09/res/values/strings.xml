@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UC04 and UC09</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="danh_sach_nha_tro">Danh sách nhà trọ</string>
+    <string name="sap_xep">Sắp xếp</string>
+    <string name="xoa">Xóa</string>
+    <string name="them">Thêm</string>
+    <string name="so_sanh">So sánh</string>
+    <string name="thong_tin_chi_tiet">Thông tin chi tiết</string>
+    <string name="nha_tro">Nhà trọ</string>
+    <string name="dia_chi">Địa chỉ</string>
+    <string name="gia_phong">Giá phòng</string>
+    <string name="so_phong">Số phòng</string>
+    <string name="dien_tich_phong">Diện tích phòng</string>
+    <string name="o_ghep">Ở ghép</string>
+    <string name="thong_tin_them">Thông tin thêm</string>
+    <string name="thong_tin_lien_he">Thông tin liên hệ</string>
+    <string name="ten_chu_tro">Tên chủ trọ</string>
+    <string name="so_dien_thoai">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="title_activity_thong_tin_nha_tro">Thông tin nhà trọ</string>
+    <string name="title_activity_them_nha_tro">Đăng thông tin nhà trọ</string>
+    <string name="dang_thong_tin_nha_tro">Đăng thông tin nhà trọ</string>
+    <string name="ten_nha_tro">Tên nhà trọ</string>
+    <string name="duoc_o_ghep">Được ở ghép</string>
+    <string name="huy_bo">Hủy bỏ</string>
+    <string name="tiep_tuc">Tiếp tục</string>
+    <string name="title_activity_them_nha_tro1">ThemNhaTro1Activity</string>
+	<string name="quay_lai">Quay lại</string>
+	<string name="xac_nhan">Xác nhận</string>
+</resources>

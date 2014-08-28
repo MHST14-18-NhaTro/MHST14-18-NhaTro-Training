@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mhst.project.uc04anduc09.ThemNhaTro1Activity" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:text="@string/dang_thong_tin_nha_tro"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear_ten_chu_tro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ten_chu_tro"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_ten_chu_tro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="test"
+            android:lines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_so_dien_thoai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear_ten_chu_tro"
+        android:layout_alignRight="@+id/linear_ten_chu_tro"
+        android:layout_below="@+id/linear_ten_chu_tro"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/so_dien_thoai"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_so_dien_thoai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="test"
+            android:lines="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear_ten_chu_tro"
+        android:layout_alignRight="@+id/linear_ten_chu_tro"
+        android:layout_below="@+id/linear_so_dien_thoai"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="test"
+            android:lines="1"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/btn_huy_bo"
+        android:text="@string/huy_bo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:textSize="15sp"
+        android:onClick="onHuyBo" />
+    <Button 
+        android:id="@+id/btn_quay_lai"
+        android:text="@string/quay_lai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_huy_bo"
+        android:layout_alignBottom="@+id/btn_huy_bo"
+        android:textSize="15sp"
+        android:onClick="onQuayLai" />
+    <Button 
+        android:id="@+id/btn_xac_nhan"
+        android:text="@string/xac_nhan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btn_quay_lai"
+        android:layout_alignBottom="@+id/btn_huy_bo"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:onClick="onXacNhan" />
+</RelativeLayout>

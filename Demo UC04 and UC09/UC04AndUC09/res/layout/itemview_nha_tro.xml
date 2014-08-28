@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginTop="7dp"
+    android:layout_marginBottom="7dp" >
+    
+	<TextView 
+	    android:id="@+id/textview_ten_nha_tro"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="ten nha tro"
+	    android:textStyle="bold"
+	    android:textSize="18sp" />
+	<TextView
+	    android:id="@+id/textview_dia_chi"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="dia chi"
+	    android:textSize="15sp" />
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView 
+	        android:id="@+id/textview_gia_phong"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="gia phong"
+	        android:textSize="17sp"
+	        android:layout_marginRight="15dp" />
+	    <TextView 
+	        android:id="@+id/textview_so_phong"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="so phong"
+	        android:textSize="15sp"/>
+	</LinearLayout>
+</LinearLayout>

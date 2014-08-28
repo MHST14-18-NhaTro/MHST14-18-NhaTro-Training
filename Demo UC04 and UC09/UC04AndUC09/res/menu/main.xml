@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mhst.project.uc04anduc09.MainActivity" >
+
+<!--     <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+ -->
+     
+    <!-- Thêm chức năng SẮP XẾP DANH SÁCH trên action bar -->
+	<item 
+	    android:id="@+id/sap_xep"
+	    android:title="@string/sap_xep"
+	    app:showAsAction="always" />
+	
+	<!-- Thêm chức năng ĐĂNG THÔNG TIN MỘT NHÀ TRỌ vào menu dưới -->
+	<item 
+	    android:id="@+id/them"
+	    android:title="@string/them"
+	    app:showAsAction="never" />
+	
+	<!-- Thêm chức năng SO SÁNH 2 NHÀ TRỌ vào menu dưới -->
+	<item 
+	    android:id="@+id/so_sanh"
+	    android:title="@string/so_sanh"
+	    app:showAsAction="never" />	
+</menu>
