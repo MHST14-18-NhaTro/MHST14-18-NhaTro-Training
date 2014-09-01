@@ -1,8 +1,10 @@
 package mhst.project.uc04anduc09;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,21 +15,22 @@ public class ThemNhaTro1Activity extends ActionBarActivity {
 	private EditText tenChuTro;
 	private EditText soDienThoai;
 	private EditText email;
-//	private String tenNhaTro;
-//	private String diaChi;
-//	private int giaPhong;
-//	private int soPhong;
-//	private double dienTichPhong;
-//	private boolean oGhep;
-//	private String thongTinThem;
-	
+	private Bitmap hinhAnhNhaTro;
+
+	// private String tenNhaTro;
+	// private String diaChi;
+	// private int giaPhong;
+	// private int soPhong;
+	// private double dienTichPhong;
+	// private boolean oGhep;
+	// private String thongTinThem;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_them_nha_tro1);
-		tenChuTro = (EditText)findViewById(R.id.edit_ten_chu_tro);
-		soDienThoai = (EditText)findViewById(R.id.edit_so_dien_thoai);
-		email = (EditText)findViewById(R.id.edit_email);
+		tenChuTro = (EditText) findViewById(R.id.edit_ten_chu_tro);
+		soDienThoai = (EditText) findViewById(R.id.edit_so_dien_thoai);
+		email = (EditText) findViewById(R.id.edit_email);
 		Intent intent = getIntent();
 		String temp = intent.getStringExtra(NhaTroDatabaseHelper.colTenChuTro);
 		if (temp != null) {
@@ -41,6 +44,7 @@ public class ThemNhaTro1Activity extends ActionBarActivity {
 		if (temp != null) {
 			email.setText(temp);
 		}
+		hinhAnhNhaTro = null;
 	}
 
 	@Override
@@ -56,31 +60,66 @@ public class ThemNhaTro1Activity extends ActionBarActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-//		if (id == R.id.action_settings) {
-//			return true;
-//		}
+		// if (id == R.id.action_settings) {
+		// return true;
+		// }
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	public void onHuyBo(View view) {
 		finish();
 	}
-	
+
+	// Cap nhat intent voi ten chu tro, so dien thoai va email,
+	// roi gui lai ThemNhaTroActivity
+
 	public void onQuayLai(View view) {
 		Intent intent = getIntent();
-		intent.putExtra(NhaTroDatabaseHelper.colTenChuTro, tenChuTro.getText().toString());
-		intent.putExtra(NhaTroDatabaseHelper.colSoDienThoai, soDienThoai.getText().toString());
-		intent.putExtra(NhaTroDatabaseHelper.colEmail, email.getText().toString());
+		addInputToIntent(intent);
 		setResult(ThemNhaTroActivity.CODE_QUAY_LAI, intent);
 		finish();
 	}
-	
-	public void onXacNhan(View view) {
+
+	/**
+	 * @param intent
+	 */
+	private void addInputToIntent(Intent intent) {
+		intent.putExtra(NhaTroDatabaseHelper.colTenChuTro, tenChuTro.getText()
+				.toString());
+		intent.putExtra(NhaTroDatabaseHelper.colSoDienThoai, soDienThoai
+				.getText().toString());
+		intent.putExtra(NhaTroDatabaseHelper.colEmail, email.getText()
+				.toString());
+		if (hinhAnhNhaTro != null) {
+			intent.putExtra(NhaTroDatabaseHelper.colHinhAnh, hinhAnhNhaTro);
+		}
+	}
+
+	public void onTiepTuc(View view) {
 		Intent intent = getIntent();
-		intent.putExtra(NhaTroDatabaseHelper.colTenChuTro, tenChuTro.getText().toString());
-		intent.putExtra(NhaTroDatabaseHelper.colSoDienThoai, soDienThoai.getText().toString());
-		intent.putExtra(NhaTroDatabaseHelper.colEmail, email.getText().toString());
-		setResult(ThemNhaTroActivity.CODE_XAC_NHAN, intent);
-		finish();
+		// Intent intent = new Intent(getApplicationContext(),
+		// ThemNhaTro2Activity.class);
+		// intent.putExtras(data.getExtras());
+		intent.setClass(this, ThemNhaTro2Activity.class);
+		addInputToIntent(intent);
+		Log.i("fucking info", "after initializing intent");
+		startActivityForResult(intent, 0);
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		switch (resultCode) {
+		case ThemNhaTroActivity.CODE_QUAY_LAI:
+			hinhAnhNhaTro = (Bitmap) data.getExtras().get(
+					NhaTroDatabaseHelper.colHinhAnh);
+			return;
+		case ThemNhaTroActivity.CODE_XAC_NHAN:
+			setResult(ThemNhaTroActivity.CODE_XAC_NHAN, data);
+			finish();
+			return;
+		default:
+			finish();
+		}
 	}
 }

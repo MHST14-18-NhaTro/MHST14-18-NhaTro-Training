@@ -1,7 +1,9 @@
 package mhst.project.uc04anduc09;
 
+import android.graphics.Bitmap;
+
 public class NhaTro {
-	
+
 	// Thông tin của nhà trọ
 	private String tenNhaTro;
 	private String diaChi;
@@ -10,12 +12,22 @@ public class NhaTro {
 	private double dienTichPhong;
 	private boolean oGhep;
 	private String thongTinThem;
-	
+	private Bitmap hinhAnh;
+
 	// Thông tin của chủ nhà trọ
 	private String tenChuTro;
+
+	public Bitmap getHinhAnh() {
+		return hinhAnh;
+	}
+
+	public void setHinhAnh(Bitmap hinhAnh) {
+		this.hinhAnh = hinhAnh;
+	}
+
 	private String soDienThoai;
 	private String email;
-	
+
 	public NhaTro() {
 		tenNhaTro = "";
 		diaChi = "";
@@ -27,10 +39,12 @@ public class NhaTro {
 		tenChuTro = "";
 		soDienThoai = "";
 		email = "";
+		hinhAnh = null;
 	}
+
 	public NhaTro(String tenNhaTro, String diaChi, int giaPhong, int soPhong,
 			double dienTichPhong, boolean oGhep, String thongTinThem,
-			String tenChuTro, String soDienThoai, String email) {
+			Bitmap hinhAnh, String tenChuTro, String soDienThoai, String email) {
 		this.tenNhaTro = tenNhaTro;
 		this.diaChi = diaChi;
 		this.giaPhong = giaPhong;
@@ -38,6 +52,7 @@ public class NhaTro {
 		this.dienTichPhong = dienTichPhong;
 		this.oGhep = oGhep;
 		this.thongTinThem = thongTinThem;
+		this.hinhAnh = hinhAnh;
 		this.tenChuTro = tenChuTro;
 		this.soDienThoai = soDienThoai;
 		this.email = email;
@@ -122,6 +137,5 @@ public class NhaTro {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+
 }

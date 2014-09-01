@@ -25,7 +25,6 @@
         <activity
             android:name=".ThongTinNhaTroActivity"
             android:label="@string/title_activity_thong_tin_nha_tro" >
-       
         </activity>
         <activity
             android:name=".ThemNhaTroActivity"
@@ -33,10 +32,12 @@
         </activity>
         <activity
             android:name=".ThemNhaTro1Activity"
-            android:label="@string/title_activity_them_nha_tro1" >     
+            android:label="@string/title_activity_them_nha_tro1" >
         </activity>
-            
+        <activity
+            android:name=".ThemNhaTro2Activity"
+            android:label="@string/title_activity_them_nha_tro2" >
+        </activity>
     </application>
 
 </manifest>
-	

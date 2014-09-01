@@ -113,13 +113,13 @@
         android:textSize="15sp"
         android:onClick="onQuayLai" />
     <Button 
-        android:id="@+id/btn_xac_nhan"
-        android:text="@string/xac_nhan"
+        android:id="@+id/btn_tiep_tuc"
+        android:text="@string/tiep_tuc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/btn_quay_lai"
         android:layout_alignBottom="@+id/btn_huy_bo"
         android:textSize="15sp"
         android:layout_marginRight="5dp"
-        android:onClick="onXacNhan" />
+        android:onClick="onTiepTuc" />
 </RelativeLayout>

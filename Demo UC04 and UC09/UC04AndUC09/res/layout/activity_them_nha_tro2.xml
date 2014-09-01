@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="mhst.project.uc04anduc09.ThemNhaTro2Activity" >
+
+	<Button 
+	    android:id="@+id/activity_them_nha_tro2_btn_dang_hinh_anh"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/dang_hinh_anh"
+	    android:layout_margin="10dp"
+	    android:onClick="onDangHinhAnh" />
+	<Button 
+	    android:id="@+id/activity_them_nha_tro2_btn_lay_tu_gallery"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/lay_tu_gallery"
+	    android:layout_toRightOf="@+id/activity_them_nha_tro2_btn_dang_hinh_anh"
+	    android:layout_alignBottom="@+id/activity_them_nha_tro2_btn_dang_hinh_anh"
+	    android:onClick="onLayTuGallery" />
+	<ImageView 
+	    android:id="@+id/activity_them_nha_tro2_iv_hinh_anh_nha_tro"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_below="@+id/activity_them_nha_tro2_btn_dang_hinh_anh"
+	    android:layout_margin="10dp"
+	    android:src="@drawable/ic_launcher"
+	    android:scaleType="fitXY"
+	    android:layout_above="@+id/activity_them_nha_tro2_btn_huy_bo"
+	    android:contentDescription="@string/hinh_anh_nha_tro" />
+	<Button 
+	    android:id="@+id/activity_them_nha_tro2_btn_huy_bo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/huy_bo"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:textSize="15sp"
+	    android:layout_margin="5dp"
+	    android:onClick="onHuyBo" />
+	<Button 
+	    android:id="@+id/activity_them_nha_tro2_btn_quay_lai"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/quay_lai"
+	    android:textSize="15sp"	    
+	    android:layout_alignBottom="@+id/activity_them_nha_tro2_btn_huy_bo"
+	    android:layout_toLeftOf="@+id/activity_them_nha_tro2_btn_huy_bo"
+	    android:onClick="onQuayLai" />
+	<Button 
+	    android:id="@+id/activity_them_nha_tro2_btn_xac_nhan"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/xac_nhan"
+	    android:textSize="15sp"
+	    android:layout_alignBottom="@+id/activity_them_nha_tro2_btn_huy_bo"
+	    android:layout_toLeftOf="@+id/activity_them_nha_tro2_btn_quay_lai"
+	    android:layout_marginRight="5dp"
+	    android:onClick="onXacNhan" />
+
+</RelativeLayout>

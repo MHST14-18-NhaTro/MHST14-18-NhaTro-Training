@@ -28,7 +28,11 @@
     <string name="duoc_o_ghep">Được ở ghép</string>
     <string name="huy_bo">Hủy bỏ</string>
     <string name="tiep_tuc">Tiếp tục</string>
-    <string name="title_activity_them_nha_tro1">ThemNhaTro1Activity</string>
-	<string name="quay_lai">Quay lại</string>
-	<string name="xac_nhan">Xác nhận</string>
+    <string name="title_activity_them_nha_tro1">Đăng thông tin nhà trọ</string>
+    <string name="quay_lai">Quay lại</string>
+    <string name="xac_nhan">Xác nhận</string>
+    <string name="title_activity_them_nha_tro2">Đăng thông tin nhà trọ</string>
+	<string name="dang_hinh_anh">Đăng hình ảnh</string>
+	<string name="hinh_anh_nha_tro">Hình ảnh nhà trọ</string>
+	<string name="lay_tu_gallery">Lấy từ Gallery</string>
 </resources>
